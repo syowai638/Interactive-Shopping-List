@@ -201,6 +201,34 @@ button {
     color: #6c757d;
 }
 
+/* Add styles for the toggle-purchased button */
+.toggle-purchased {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.toggle-purchased:hover {
+    background-color: #0056b3;
+}
+
+/* Add styles for contentEditable items */
+.item-name[contenteditable="true"],
+.item-category[contenteditable="true"] {
+    border-bottom: 1px dotted #007bff;
+    cursor: text;
+}
+
+.item-name[contenteditable="true"]:focus,
+.item-category[contenteditable="true"]:focus {
+    outline: none;
+    background-color: #f1f1f1;
+}
+
 /* Footer Styles */
 footer {
     background-color: #4CAF50; /* Matching header */
