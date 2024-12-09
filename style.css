@@ -1,0 +1,214 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #4CAF50; /* Matching header/footer */
+    color: white;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px; /* Adds spacing between header elements */
+}
+
+header h1 {
+    font-size: 1.5;
+    margin: 0;
+}
+
+header p {
+    margin: 0; /* Removes extra space around the text */
+    font-size: 1.1em; /* Slightly smaller than the title */
+    font-weight: 300;
+    color: #f0f0f0;
+    flex: 1; /* Makes the paragraph take up remaining space */
+    text-align: left;
+}
+
+/* Cart Icon Styles */
+.cart-icon {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.cart-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Input Section */
+.input-section {
+    background-color: #ffffff;
+    padding: 20px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.input-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.input-section input {
+    padding: 10px;
+    font-size: 1.2em;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.input-section input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.input-section input#item-input {
+    width: calc(70% - 10px);
+}
+
+.input-section input#item-quantity {
+    width: calc(25% - 10px);
+    margin-left: 5px;
+}
+
+/* Button Styles */
+.buttons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#add-item {
+    background-color: grey; /* Green */
+    color: white;
+    cursor: pointer;
+}
+
+#add-item:hover {
+    background-color: #45a049;
+}
+
+#clear-list {
+    background-color: grey; /* Red */
+    color: white;
+}
+
+#clear-list:hover {
+    background-color: #e53935;
+}
+
+/* List Section */
+.list-section {
+    background-color: #ffffff;
+    padding: 20px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.list-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+#shopping-list {
+    list-style: none;
+    padding: 0;
+}
+
+.list-item {
+    background-color: #f9f9f9;
+    padding: 10px 15px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.list-item:hover {
+    background-color: #f1f1f1;
+}
+
+.list-item .item-name {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.list-item .item-category {
+    font-size: 1em;
+    color: #555;
+    font-style: italic;
+}
+
+.list-item .item-quantity {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Purchased Item Styles */
+.purchased {
+    text-decoration: line-through;
+    background-color: #d3ffd3;
+    color: #6c757d;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #4CAF50; /* Matching header */
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 0.9rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
