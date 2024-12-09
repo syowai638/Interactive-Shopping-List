@@ -3,17 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An interactive shopping list application for organizing your daily needs.">
+    <meta name="author" content="Your Name">
     <title>Interactive Shopping List</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
     <div class="container">
-        <h1>Shopping List</h1>
-        <input type="text" id="item-input" placeholder="Enter item">
-        <button id="add-item">Add Item</button>
-        <button id="clear-list">Clear List</button>
-        <ul id="shopping-list"></ul>
+        <header>
+            <!-- Header content with shopping list and cart image -->
+            <div class="header-content">
+                <img src="cart-icon.png" alt="Shopping Cart" class="cart-icon">
+                <h1>Interactive Shopping List</h1>
+            </div>
+            <p>Organize your shopping effortlessly.</p>
+        </header>
+        <main>
+            <!-- Main content goes here -->
+            <section class="shopping-controls" aria-labelledby="controls-header">
+                <h2 id="controls-header">Manage Your Shopping List</h2>
+                <label for="category">Category:</label>
+                <select id="category" aria-label="Category selection">
+                    <option value="" disabled selected>Select Category</option>
+                    <option value="Cleaning & household">Cleaning & household</option>
+                    <option value="Food">Food</option>
+                    <option value="Beverages">Beverages</option>
+                </select>
+
+                <label for="subcategory">Subcategory:</label>
+                <select id="subcategory" aria-label="Subcategory selection">
+                    <option value="" disabled selected>Select Subcategory</option>
+                </select>
+
+                <label for="item-quantity">Item & Quantity:</label>
+                <select id="item-quantity" aria-label="Item and quantity selection">
+                    <option value="" disabled selected>Select Quantity</option>
+                </select>
+
+                <button id="add-item" aria-label="Add item to list">Add Item</button>
+                <button id="clear-list" aria-label="Clear shopping list">Clear List</button>
+            </section>
+
+            <section class="shopping-list" aria-labelledby="list-header">
+                <h2 id="list-header">Your Shopping List</h2>
+                <ul id="shopping-list"></ul>
+            </section>
+        </main>
     </div>
+    <footer>
+        <p>&copy; 2024 Interactive Shopping List. Created by [Your Name].</p>
+    </footer>
     <script src="index.js"></script>
 </body>
 </html>
